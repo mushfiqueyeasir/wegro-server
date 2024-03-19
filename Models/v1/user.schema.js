@@ -30,8 +30,8 @@ const userSchema = mongoose.Schema(
     userName: {
       type: String,
       required: [true, "Username Is Required!"],
-      minLength: [3, "Username Must Be Between 3-8 Characters!"],
-      maxLength: [8, "Username Must Be Between 3-8 Characters!"],
+      minLength: [3, "Username Must Be Between  Characters!"],
+  
     },
 
     password: {

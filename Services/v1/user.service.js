@@ -2,6 +2,7 @@ const userSchema = require("../../Models/v1/user.schema");
 const bcryptjs = require("bcryptjs");
 
 exports.create = async (userInfo) => {
+  console.log(userInfo)
   const result = await userSchema.create(userInfo);
   return result;
 };

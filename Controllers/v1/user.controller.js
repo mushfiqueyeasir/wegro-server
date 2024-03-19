@@ -11,6 +11,7 @@ const {
   exports.createUser = async (req, res) => {
     try {
       let data = req.body;
+      console.log(req)
       const result = await create(data);
       res.status(200).json({
         status: "success",
