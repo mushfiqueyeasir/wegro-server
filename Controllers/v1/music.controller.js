@@ -1,7 +1,9 @@
 const { getAllData } = require("../../Services/v1/music.service");
+const path = require("path");
 exports.getAll = async (req, res, next) => {
   try {
     const result = await getAllData(req.query);
+    let temp = []
     res.status(200).json({
       status: "success",
       message: "All Music Data Acquired Successfully!",
